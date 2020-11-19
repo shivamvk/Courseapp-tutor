@@ -21,6 +21,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
+                android:id="@+id/image"
                 android:src="@drawable/ic_dummy_course" />
 
             <LinearLayout
@@ -35,6 +36,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
                     android:text="Learn kotlin in 7 days"
+                    android:id="@+id/title"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -43,7 +45,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_light"
                     android:text="English learning course"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:id="@+id/category"/>
 
             </LinearLayout>
 

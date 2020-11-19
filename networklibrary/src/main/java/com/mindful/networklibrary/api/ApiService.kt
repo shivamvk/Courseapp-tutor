@@ -16,4 +16,7 @@ interface ApiService {
     @Multipart
     @POST
     fun doPostApiMultipartCall(@Url url: String, @Part params: List<MultipartBody.Part>): Observable<ResponseBody>
+
+    @PUT
+    fun doPutApiCall(@Url mUrl: String, @Body jsonObject: JsonObject): Observable<ResponseBody>
 }

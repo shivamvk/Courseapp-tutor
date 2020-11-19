@@ -8,6 +8,11 @@ object PreferencesHelper {
     enum class SharedPrefKeys {
         USER_TOKEN,
         USER_ID,
+        USER_NAME,
+        USER_EMAIL,
+        USER_PHONE,
+        USER_ROLE,
+        USER_PROFILE_PICTURE
     }
 
     fun appPrefs(context: Context): SharedPreferences

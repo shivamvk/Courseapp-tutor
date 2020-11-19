@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_home -> goto(homeFragment)
+            R.id.nav_courses -> goto(homeFragment)
+            R.id.nav_profile -> goto(homeFragment)
         }
         return true
     }

@@ -11,7 +11,7 @@ class CourseTutorApplication : Application() {
         initDagger()
     }
 
-    private fun initDagger() {
+    fun initDagger() {
         dagger = DaggerAppComponent.builder().networkModule(
             NetworkModule(applicationContext) // This is where we pass the context to our module
         ).build()

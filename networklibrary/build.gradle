@@ -12,7 +12,8 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        buildConfigField "String", "BASEURL", "\"http://13.127.203.115/api/\""
+        buildConfigField "String", "AWSURL", "\"https://edumindful.s3.ap-south-1.amazonaws.com/\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }

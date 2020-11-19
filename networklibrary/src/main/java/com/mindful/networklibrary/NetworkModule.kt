@@ -3,8 +3,8 @@ package com.mindful.networklibrary
 import android.content.Context
 import android.content.SharedPreferences
 import com.mindful.networklibrary.api.ApiService
-import com.mindful.networklibrary.sharedprefs.PreferencesHelper.get
 import com.mindful.networklibrary.sharedprefs.PreferencesHelper
+import com.mindful.networklibrary.sharedprefs.PreferencesHelper.get
 import dagger.Module
 import dagger.Provides
 import okhttp3.Interceptor
@@ -26,7 +26,7 @@ class NetworkModule(val context: Context) {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-            .baseUrl("<-- YOUR SERVEL BASEURL -->")
+            .baseUrl(BuildConfig.BASEURL)
             .client(okHttpClient)
             .build()
     }
